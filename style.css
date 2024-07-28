@@ -1,0 +1,30 @@
+
+.container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 20%; /* Center the container horizontally */
+    padding: 20px; /* Add padding to the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f3ecec; /* Set the background color */
+}

